@@ -3,10 +3,10 @@
 /**
  * main - entry point
  *
- * Description:Print all the letters except q and e, using putchar only.
+ * Description: Print all the letters except q and e, using putchar only.
  *
- * Retirn: 0 (Success)
-*/
+ * Return: 0 (Success).
+ */
 
 int main(void)
 {
