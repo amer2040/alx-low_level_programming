@@ -17,6 +17,6 @@ int main(void)
 		ch++;
 	}
 
-	putchar('\n');
+	putchar('\n');/* Print a newline character at the end */
 	return (0);
 }
