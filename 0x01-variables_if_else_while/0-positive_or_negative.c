@@ -3,13 +3,12 @@
 #include <stdio.h>
 
 /**
- * Main - entry point
+ * main - entry point
  *
  * Description: fasle or true validation
  *
  * Return: 0 (Success)
 */
-
 int main(void)
 {
 	int n;
