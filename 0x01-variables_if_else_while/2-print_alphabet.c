@@ -11,12 +11,13 @@
 int main(void)
 {
 	char ch = 'a';
-	while (ch <= 'z')
+
+	while (ch <= 'z') /* for betty*/
 	{
 		putchar(ch);
 		ch++;
 	}
+	putchar('\n');
 
-	putchar('\n');/* Print a newline character at the end */
 	return (0);
 }
