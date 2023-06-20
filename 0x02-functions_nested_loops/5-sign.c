@@ -3,11 +3,10 @@
 /**
  * print_sign - print the sign of number
  *
- * @c: the number
+ * @n: the number
  *
- * Return: 1 (is greater than zero)
- * 	0 (is zero)
- * 	-1 (is less than zero)
+ * Return: 1 (is greater that zero) or 0 (is zero)
+ * or -1 (is less that zero)
 */
 
 int print_sign(int n)
