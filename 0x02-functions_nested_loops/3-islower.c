@@ -5,7 +5,7 @@
  *
  * c: number to be checked
  *
- * Return: 1 (success), 0 (error)
+ * Return: 1 (success), 0 (otherwise)
 */
 
 int _islower(int c)
