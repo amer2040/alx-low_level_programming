@@ -1,11 +1,9 @@
 #include "main.h"
 
 /**
- * print - start here.
+ * print_alphabet_x10 - function print a to z 0 times
  *
- * Description: print alphabet 10 times.
- *
- * Return: void.
+ * Return: void
 */
 
 void print_alphabet_x10(void)
