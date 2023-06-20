@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints natural numbers below 1024 that are 
+ * main - prints natural numbers below 1024 that are
  * multibles of 3 or 5
  *
  * Return: Always 0
