@@ -3,7 +3,7 @@
 /**
  * _islower - chech lowercase char
  *
- * c: number to be checked
+ * @c: number to be checked
  *
  * Return: 1 (success), 0 (otherwise)
 */
