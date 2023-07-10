@@ -1,51 +1,43 @@
 #include "main.h"
-
 /**
- * argstostr - Concatenates all the arguments of the program
- *
- * @ac: Argument total count
- *
- * @av: Pointer to arguments
- *
- * Retunr: Pointer to concatenated string (SUCCESS) or
- * NULL if @ac == 0 or @av == NULL (FAILURE) or
- * NULL if if insufficient memory was available (FAILURE)
+ * argstostr - prints args
+ * @ac: takes in width of grid
+ * @av: height of grid
+ * Return: the args one line at a time
  */
 
 char *argstostr(int ac, char **av)
 {
-	int i, j;
-	int count = 0;
-	int t_count = 0;
-	char *result;
+	char *str;
+	int count = 0, a = 0, b = 0, c = 0;
 
 	if (ac == 0 || av == NULL)
-		return ('\0');
-
-	for (i = 0; i < ac; i++)
+		return (NULL);
+	while (a < ac)
 	{
-		for (j = 0; av[i][j] != '\0'; j++)
-			t_count++;
-
-		t_count++;
-	}
-
-	result = malloc(sizeof(char) * t_count + 1);
-
-	if (result == NULL)
-	{
-		return ('\0');
-	}
-
-	for (i = 0; i < ac; i++)
-	{
-		for (j = 0; av[i][j] != '\0'; j++)
+		b = 0;
+		while (av[a][b] != '\0')
 		{
-			result[count++] = av[i][j];
+			count++;
+			b++;
 		}
-		result[count++] = '\n';
+		a++;
 	}
-
-	result[t_count] = '\0';
-	return (result);
+	count = count + ac + 1;
+	str = malloc(sizeof(char) * count);
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+	for (a = 0; a < ac; a++)
+	{
+		for (b = 0; av[a][b] != '\0'; b++)
+		{
+			str[c] = av[a][b];
+			c++;
+		}
+		str[c] = '\n';
+		c++;
+	}
+	return (str);
 }
