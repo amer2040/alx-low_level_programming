@@ -1,4 +1,4 @@
-#include "lists"
+#include "lists.h"
 
 /**
  * add_dnodeint - adds new head node to doulby linked list
